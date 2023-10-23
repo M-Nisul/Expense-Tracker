@@ -22,7 +22,7 @@ const renderTable = () => {
         table.innerHTML += `<tr>
         
                         <td id="vendor-table">${expense.vendor}</td>
-                        <td id="amount-table">${expense.amount}</td>
+                        <td id="amount-table">${expense.amount}$</td>
                         <td id="date-table">${expense.date}</td>
                         <td id="description-table">${expense.description}</td>
                         <td class="delete"><button onclick="deleteRow()">❌</button></td>
