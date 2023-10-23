@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/x-icon" href="./img/save-money.png">    
+</head>
+<body>
+    <h1 id="title">Expense Tracker</h1>
+    <form class="input">
+        <div class="vendor">
+            <p id="vendor-text">Vendor<span class="asterik">*</span>:</p>
+            <input type="text" id="vendor" placeholder="Enter The Vendor">
+        </div>
+        <div class="amount">
+            <p id="amount-text">Amount<span class="asterik">*</span>:</p>
+            <input type="number" id="amount" placeholder="Enter The Amount">
+        </div>
+        <div class="date">
+            <p id="date-text">Date<span class="asterik">*</span>:</p>
+            <input type="date" id="date" placeholder="Enter The Date">
+        </div>
+        <div class="description">
+            <p id="description-text">Description:</p>
+            <input type="text" id="description" placeholder="Optional">
+        </div>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <table id="table" width="370px">
+        <tr class="header">
+            <th id="vendor-col" width="50px">Vendor</th>
+            <th id="amount-col" width="50px">Amount</th>
+            <th id="date-col" width="50px">Date</th>
+            <th id="description-col" width="200px">Description</th>
+            <th id="delete" width="20px">Delete</th>
+        </tr>
+    </table>
+    <script src="./app.js">
+    </script>
+</body>
+</html>
